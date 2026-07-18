@@ -1,0 +1,59 @@
+/* ============================================
+   ABOUT PAGE STYLES
+============================================ */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.about-feature {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-feature .about-icon {
+  font-size: 2.2rem;
+  margin-bottom: 4px;
+}
+
+.about-feature h3 {
+  color: #0f2f28;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.about-feature p {
+  color: #5a6b66;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 16px;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .about-image img {
+    max-height: 280px;
+  }
+}
